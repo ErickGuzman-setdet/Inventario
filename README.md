@@ -8,7 +8,7 @@ El nodo puede contener datos específicos; en este caso, como está basado en un
 
 ## Declaración del nodo
 
-    '''bash
+    '''
         class Producto{
             public:
                 int ID;
@@ -44,4 +44,5 @@ Gracias a esta forma de manejar los datos, es que nosotros podemos agregar, elim
     MinGW: https://sourceforge.net/projects/mingw-w64/
 
 Una vez instalado y ejecutado ya sea en Dev o en Visual, nos genera un .exe que es el mismo código pero compilado. Ya no hay necesidad de abrir el compilador, simplemente ejecutamos directamente el .exe y podemos gestionar desde ahí.
+
 Aunque cada vez que se cierra el programa se borra la información que se agrega, para ello se implementó el guardado con CSV, que es un archivo en Excel. Ahora, contestando la pregunta de por qué se borra la información al cerrar el programa, la respuesta es bastante sencilla: como estamos manejando espacios de memoria para almacenar la información en la memoria RAM mediante los apuntadores, al cerrar el programa se pierde esa información y no hay manera de volver a ella. Al reiniciar o apagar el dispositivo, se borra toda esa información para liberar memoria y que el sistema vuelva a arrancar de manera normal.
